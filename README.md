@@ -25,7 +25,7 @@ CasyOS/
 ├─ os_task.c           # 任务管理/就绪队列/优先级位图
 ├─ os_tick.c           # Tick 延时链表与 tick 更新
 ├─ os_pend.c           # PendList 通用挂起队列操作
-├─ os_mem.c            # 内存管理（若启用）
+├─ os_mem.c            # 内存管理
 ├─ os_sem.c            # 信号量
 ├─ os_mutex.c          # 互斥量
 ├─ os_q.c              # 消息队列
