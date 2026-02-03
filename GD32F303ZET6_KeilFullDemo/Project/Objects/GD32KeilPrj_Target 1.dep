@@ -1,0 +1,918 @@
+Dependencies for Project 'GD32KeilPrj', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
+F (..\App\Main\Main.c)(0x6981AD28)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\App\Main\Main.h)(0x612F69BF)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\HW\RCU\RCU.h)(0x697FF841)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\ARM\NVIC\NVIC.h)(0x612F6B18)
+I (..\HW\Timer\Timer.h)(0x697FF841)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\App\LED\LED.h)(0x697FF841)
+I (..\App\KeyOne\KeyOne.h)(0x697FF841)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_datatype.h)(0x69815965)
+I (..\App\Delay\Delay.h)(0x697FF841)
+F (..\App\LED\LED.c)(0x697FF841)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (..\App\LED\LED.h)(0x697FF841)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\App\KeyOne\KeyOne.c)(0x697FF841)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\keyone.o --omf_browse .\objects\keyone.crf --depend .\objects\keyone.d)
+I (..\App\KeyOne\KeyOne.h)(0x697FF841)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\App\Delay\Delay.c)(0x697FF841)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (..\App\Delay\Delay.h)(0x697FF841)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\HW\RCU\RCU.c)(0x697FF73F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\rcu.o --omf_browse .\objects\rcu.crf --depend .\objects\rcu.d)
+I (..\HW\RCU\RCU.h)(0x697FF841)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\HW\Timer\Timer.c)(0x697FF7A3)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (..\HW\Timer\Timer.h)(0x697FF841)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\OS\os_datatype.h)(0x69815965)
+F (..\HW\UART0\CirQueue.c)(0x697FF7D3)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\cirqueue.o --omf_browse .\objects\cirqueue.crf --depend .\objects\cirqueue.d)
+I (..\HW\UART0\CirQueue.h)(0x697FF841)
+F (..\HW\UART0\UART0.c)(0x697FF7E3)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\uart0.o --omf_browse .\objects\uart0.crf --depend .\objects\uart0.d)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\HW\UART0\CirQueue.h)(0x697FF841)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_datatype.h)(0x69815965)
+F (..\OS\CasyOS.c)(0x69816630)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\casyos.o --omf_browse .\objects\casyos.crf --depend .\objects\casyos.d)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\OS\os_datatype.h)(0x69815965)
+F (..\OS\os_flag.c)(0x698052F3)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_flag.o --omf_browse .\objects\os_flag.crf --depend .\objects\os_flag.d)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\OS\os_datatype.h)(0x69815965)
+F (..\OS\os_mem.c)(0x69816A7A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_mem.o --omf_browse .\objects\os_mem.crf --depend .\objects\os_mem.d)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\OS\os_datatype.h)(0x69815965)
+I (D:\Program Files (x86)\ARM\ARMCC\include\string.h)(0x5E53505C)
+F (..\OS\os_mutex.c)(0x6980102E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_mutex.o --omf_browse .\objects\os_mutex.crf --depend .\objects\os_mutex.d)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\OS\os_datatype.h)(0x69815965)
+F (..\OS\os_q.c)(0x69801026)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_q.o --omf_browse .\objects\os_q.crf --depend .\objects\os_q.d)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\OS\os_datatype.h)(0x69815965)
+F (..\OS\os_sem.c)(0x69816B55)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_sem.o --omf_browse .\objects\os_sem.crf --depend .\objects\os_sem.d)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\OS\os_datatype.h)(0x69815965)
+F (..\OS\os_task.c)(0x6981662E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_task.o --omf_browse .\objects\os_task.crf --depend .\objects\os_task.d)
+I (..\OS\CasyOS.h)(0x69816EC7)
+I (..\OS\os_cfg.h)(0x6981C086)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (..\HW\UART0\UART0.h)(0x69805DF1)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\OS\os_datatype.h)(0x69815965)
+F (..\FW\Source\gd32f30x_fmc.c)(0x5FDC4DCE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_fmc.o --omf_browse .\objects\gd32f30x_fmc.crf --depend .\objects\gd32f30x_fmc.d)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\FW\Source\gd32f30x_gpio.c)(0x5FDC4DCE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_gpio.o --omf_browse .\objects\gd32f30x_gpio.crf --depend .\objects\gd32f30x_gpio.d)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\FW\Source\gd32f30x_misc.c)(0x5FDC4DCE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_misc.o --omf_browse .\objects\gd32f30x_misc.crf --depend .\objects\gd32f30x_misc.d)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\FW\Source\gd32f30x_rcu.c)(0x5FDC4DCE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_rcu.o --omf_browse .\objects\gd32f30x_rcu.crf --depend .\objects\gd32f30x_rcu.d)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\FW\Source\gd32f30x_timer.c)(0x5FDC4DCD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_timer.o --omf_browse .\objects\gd32f30x_timer.crf --depend .\objects\gd32f30x_timer.d)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\FW\Source\gd32f30x_usart.c)(0x5FDC4DCE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_usart.o --omf_browse .\objects\gd32f30x_usart.crf --depend .\objects\gd32f30x_usart.d)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\FW\Source\gd32f30x_dma.c)(0x5FDC4DCE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_dma.o --omf_browse .\objects\gd32f30x_dma.crf --depend .\objects\gd32f30x_dma.d)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
+F (..\ARM\System\gd32f30x_it.c)(0x697DBFDF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_it.o --omf_browse .\objects\gd32f30x_it.crf --depend .\objects\gd32f30x_it.d)
+I (..\ARM\System\gd32f30x_it.h)(0x5FDC4DCA)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\ARM\NVIC\NVIC.c)(0x650BB6E0)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\nvic.o --omf_browse .\objects\nvic.crf --depend .\objects\nvic.d)
+I (..\ARM\NVIC\NVIC.h)(0x612F6B18)
+I (..\App\DataType\DataType.h)(0x69815980)
+I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\ARM\System\system_gd32f30x.c)(0x5BC68B14)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\system_gd32f30x.o --omf_browse .\objects\system_gd32f30x.crf --depend .\objects\system_gd32f30x.d)
+I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
+I (..\ARM\System\core_cm4.h)(0x5E8ED122)
+I (D:\Program Files (x86)\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (..\ARM\System\cmsis_version.h)(0x5E8ED122)
+I (..\ARM\System\cmsis_compiler.h)(0x5E8306C2)
+I (..\ARM\System\cmsis_armcc.h)(0x5E8ED122)
+I (..\ARM\System\mpu_armv7.h)(0x5E8ED122)
+I (..\ARM\System\system_gd32f30x.h)(0x5BC68A4A)
+I (..\ARM\System\gd32f30x_libopt.h)(0x5FDC4DCA)
+I (..\FW\Include\gd32f30x_rcu.h)(0x613EEAC5)
+I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_can.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_crc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_ctc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dac.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dbg.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_dma.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exti.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fmc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_fwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_gpio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_i2c.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_pmu.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_bkp.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_rtc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_sdio.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_spi.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_timer.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_usart.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_wwdgt.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
+I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
+F (..\ARM\System\startup_gd32f30x_hd.s)(0x6968DDE1)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"--pd "__UVISION_VERSION SETA 530" --pd "_RTE_ SETA 1" --pd "GD32F30X_HD SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_gd32f30x_hd.lst --xref -o .\objects\startup_gd32f30x_hd.o --depend .\objects\startup_gd32f30x_hd.d)

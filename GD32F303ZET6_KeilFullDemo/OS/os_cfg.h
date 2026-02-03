@@ -19,12 +19,12 @@
 /*
 * 需要替换为对应芯片的外设库文件 比如stm32f10x_conf.h
 */
-#include "stm32f10x_conf.h"
+#include "gd32f30x_conf.h"
 
 /*
 * 可选：仅用于printf调试打印，移植时可删除或替换 比如UART1.h 或任何包含printf实现的头文件
 */
-#include "UART1.h"
+#include "UART0.h"
 
 
 
@@ -47,5 +47,17 @@
 #define OS_CFG_MUTEX_EN                   1           //1=启用互斥量组件
 
 #define OS_CFG_FLAG_EN                    1           //1=启用事件标志组组件
+
+/*--------------------------------------------------------------------------------------------------------
+					示例工程main.c Demo/测试开关 (建议一个一个启用, 如果不需要可以将以下宏定义全部删掉)
+					其中LED 和三个独立按键 需要根据开发板配置相应的引脚
+--------------------------------------------------------------------------------------------------------*/
+#define LED_TEST                          1
+#define FPU_TEST                          1
+#define MEM_TEST                          0
+#define SEM_TEST                          0
+#define Q_TEST                            0
+#define MUTEX_TEST                        0
+#define FLAG_TEST                         0
 
 #endif  //_OS_CFG_H_
