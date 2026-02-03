@@ -65,8 +65,8 @@ static void IdleTask(void);	//空闲任务
 * 返 回 值：void
 * 创建日期：2026年01月31日
 * 注    意：
-*           1) 空闲任务用于保证系统始终有任务可运行
-*           2) TODO: 可在此处扩展 CPU 利用率统计 / 低功耗处理等功能
+*           (1) 空闲任务用于保证系统始终有任务可运行
+*           (2) TODO: 可在此处扩展 CPU 利用率统计 / 低功耗处理等功能
 *********************************************************************************************************/
 static void IdleTask(void)
 {
@@ -117,7 +117,7 @@ void SysTick_Handler(void)
 	OSIntEnter();
 	OS_TickUpdate();	//所有任务tick递减 空闲任务除外
 
-	OS_Sched();	//触发异常 任务切换
+	OS_Sched();				//触发异常 任务切换
 	OSIntExit();
 }
 
@@ -135,9 +135,9 @@ void SysTick_Handler(void)
 *********************************************************************************************************/
 __ASM void SVC_Handler(void)
 {
-	PRESERVE8                //该段起始地址以8字节对齐
+	PRESERVE8                		//该段起始地址以8字节对齐
 	IMPORT OS_UpdateCurrentTask //引入标号OS_UpdateCurrentTask
-	IMPORT g_pCurrentTask    //引入标号g_pCurrentTask
+	IMPORT g_pCurrentTask    		//引入标号g_pCurrentTask
 
 	//屏蔽所有中断
 	CPSID F
@@ -179,9 +179,9 @@ __ASM void SVC_Handler(void)
 *********************************************************************************************************/
 __ASM void PendSV_Handler(void)
 {
-  PRESERVE8                //该段起始地址以8字节对齐
-  IMPORT OS_UpdateCurrentTask 					 //引入标号OS_UpdateCurrentTask
-  IMPORT g_pCurrentTask    //引入标号g_pCurrentTask
+  PRESERVE8                			//该段起始地址以8字节对齐
+  IMPORT OS_UpdateCurrentTask		//引入标号OS_UpdateCurrentTask
+  IMPORT g_pCurrentTask    			//引入标号g_pCurrentTask
 
   //屏蔽所有中断
   CPSID F
