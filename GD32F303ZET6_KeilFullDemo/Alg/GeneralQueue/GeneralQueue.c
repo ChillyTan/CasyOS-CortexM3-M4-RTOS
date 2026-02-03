@@ -2,8 +2,8 @@
 * 模块名称: GeneralQueue.c
 * 摘    要:
 * 当前版本: 1.0.0
-* 作    者: SZLY(COPYRIGHT 2019 SZLY. All rights reserved.)
-* 完成日期: 2019年08月01日
+* 作    者: Chill
+* 完成日期: 2026年01月31日
 * 内    容:
 * 注    意:
 **********************************************************************************************************
@@ -48,7 +48,7 @@
 * 输入参数: queue：队列
 * 输出参数: void
 * 返 回 值: void
-* 创建日期: 2019年08月01日
+* 创建日期: 2026年01月31日
 * 注    意: 
 *********************************************************************************************************/
 void InitGeneralQueue(StructGeneralCirQue* queue)
@@ -62,7 +62,7 @@ void InitGeneralQueue(StructGeneralCirQue* queue)
 * 输入参数: queue：队列
 * 输出参数: void
 * 返 回 值: 1-队列为空，其它-队列非空
-* 创建日期: 2019年08月01日
+* 创建日期: 2026年01月31日
 * 注    意:
 *********************************************************************************************************/
 int IsGeneralQueueEmpty(StructGeneralCirQue* queue)
@@ -76,7 +76,7 @@ int IsGeneralQueueEmpty(StructGeneralCirQue* queue)
 * 输入参数: queue：队列
 * 输出参数: void
 * 返 回 值: 1-队列为满，其它-队列非满
-* 创建日期: 2019年08月01日
+* 创建日期: 2026年01月31日
 * 注    意:
 *********************************************************************************************************/
 int IsGeneralQueueFull(StructGeneralCirQue* queue)
@@ -90,7 +90,7 @@ int IsGeneralQueueFull(StructGeneralCirQue* queue)
 * 输入参数: queue：队列
 * 输出参数: void
 * 返 回 值: void
-* 创建日期: 2019年08月01日
+* 创建日期: 2026年01月31日
 * 注    意:
 *********************************************************************************************************/
 void ClearGeneralQueue(StructGeneralCirQue* queue)
@@ -111,7 +111,7 @@ void ClearGeneralQueue(StructGeneralCirQue* queue)
 * 输入参数: queue：队列
 * 输出参数: void
 * 返 回 值: 队列中元素个数
-* 创建日期: 2019年08月01日
+* 创建日期: 2026年01月31日
 * 注    意:
 *********************************************************************************************************/
 u32 GetrGeneralQueueLength(StructGeneralCirQue* queue)
@@ -125,7 +125,7 @@ u32 GetrGeneralQueueLength(StructGeneralCirQue* queue)
 * 输入参数: queue：队列，data：数据地址
 * 输出参数: void
 * 返 回 值: void
-* 创建日期: 2019年08月01日
+* 创建日期: 2026年01月31日
 * 注    意: 在调用时data要强制转换成void指针，若填入时队列已满，则自动丢弃队首数据
 *********************************************************************************************************/
 void EnGeneralQueue(StructGeneralCirQue* queue, void* data)
@@ -159,7 +159,7 @@ void EnGeneralQueue(StructGeneralCirQue* queue, void* data)
 * 输入参数: queue：队列
 * 输出参数: void
 * 返 回 值: 数据地址，失败返回NULL
-* 创建日期: 2019年08月01日
+* 创建日期: 2026年01月31日
 * 注    意: 读取数据时要强制转换成相应类型
 *********************************************************************************************************/
 void* DeGeneralQueue(StructGeneralCirQue* queue)

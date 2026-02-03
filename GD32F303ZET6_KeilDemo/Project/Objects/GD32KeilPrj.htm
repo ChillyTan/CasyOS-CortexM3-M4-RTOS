@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\GD32KeilPrj.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\GD32KeilPrj.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Feb 03 16:15:53 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Feb 03 21:46:07 2026
 <BR><P>
 <H3>Maximum Stack Usage =        156 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -75,7 +75,7 @@ Function Pointers
  <LI><a href="#[27]">TIMER2_IRQHandler</a> from timer.o(i.TIMER2_IRQHandler) referenced from startup_gd32f30x_hd.o(RESET)
  <LI><a href="#[28]">TIMER3_IRQHandler</a> from startup_gd32f30x_hd.o(.text) referenced from startup_gd32f30x_hd.o(RESET)
  <LI><a href="#[3c]">TIMER4_IRQHandler</a> from startup_gd32f30x_hd.o(.text) referenced from startup_gd32f30x_hd.o(RESET)
- <LI><a href="#[40]">TIMER5_IRQHandler</a> from timer.o(i.TIMER5_IRQHandler) referenced from startup_gd32f30x_hd.o(RESET)
+ <LI><a href="#[40]">TIMER5_IRQHandler</a> from startup_gd32f30x_hd.o(.text) referenced from startup_gd32f30x_hd.o(RESET)
  <LI><a href="#[41]">TIMER6_IRQHandler</a> from startup_gd32f30x_hd.o(.text) referenced from startup_gd32f30x_hd.o(RESET)
  <LI><a href="#[35]">TIMER7_BRK_IRQHandler</a> from startup_gd32f30x_hd.o(.text) referenced from startup_gd32f30x_hd.o(RESET)
  <LI><a href="#[38]">TIMER7_Channel_IRQHandler</a> from startup_gd32f30x_hd.o(.text) referenced from startup_gd32f30x_hd.o(RESET)
@@ -277,6 +277,9 @@ Global Symbols
 <P><STRONG><a name="[3c]"></a>TIMER4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f30x_hd.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
 </UL>
+<P><STRONG><a name="[40]"></a>TIMER5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f30x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
+</UL>
 <P><STRONG><a name="[41]"></a>TIMER6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f30x_hd.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
 </UL>
@@ -417,6 +420,7 @@ Global Symbols
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_ENTER_CRITICAL
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART0_IRQHandler
 </UL>
 
 <P><STRONG><a name="[71]"></a>OSIntExit</STRONG> (Thumb, 54 bytes, Stack size 4 bytes, casyos.o(i.OSIntExit))
@@ -426,6 +430,7 @@ Global Symbols
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_ENTER_CRITICAL
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART0_IRQHandler
 </UL>
 
 <P><STRONG><a name="[72]"></a>OSMalloc</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, os_mem.o(i.OSMalloc))
@@ -501,9 +506,9 @@ Global Symbols
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMalloc
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInitTaskSched
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInitMemory
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_UpdateCurrentTask
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntExit
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntEnter
-<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_UpdateCurrentTask
 </UL>
 
 <P><STRONG><a name="[6b]"></a>OS_EXIT_CRITICAL</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, casyos.o(i.OS_EXIT_CRITICAL))
@@ -511,9 +516,9 @@ Global Symbols
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMalloc
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInitTaskSched
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInitMemory
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_UpdateCurrentTask
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntExit
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntEnter
-<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_UpdateCurrentTask
 </UL>
 
 <P><STRONG><a name="[7f]"></a>OS_InISR</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, casyos.o(i.OS_InISR))
@@ -637,7 +642,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(.text)
 </UL>
-<P><STRONG><a name="[27]"></a>TIMER2_IRQHandler</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, timer.o(i.TIMER2_IRQHandler))
+<P><STRONG><a name="[27]"></a>TIMER2_IRQHandler</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, timer.o(i.TIMER2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIMER2_IRQHandler
 </UL>
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_get
@@ -645,20 +650,14 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[40]"></a>TIMER5_IRQHandler</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, timer.o(i.TIMER5_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIMER5_IRQHandler
-</UL>
-<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_get
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
-</UL>
-<P><STRONG><a name="[2f]"></a>USART0_IRQHandler</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, uart0.o(i.USART0_IRQHandler))
+<P><STRONG><a name="[2f]"></a>USART0_IRQHandler</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, uart0.o(i.USART0_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = USART0_IRQHandler &rArr; usart_interrupt_flag_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_get
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_clear
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_receive
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntExit
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntEnter
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnCirQueue
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
@@ -750,13 +749,11 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[85]"></a>timer_interrupt_flag_clear</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_flag_clear))
-<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER5_IRQHandler
-<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER2_IRQHandler
+<BR><BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER2_IRQHandler
 </UL>
 
 <P><STRONG><a name="[84]"></a>timer_interrupt_flag_get</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_flag_get))
-<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER5_IRQHandler
-<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER2_IRQHandler
+<BR><BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER2_IRQHandler
 </UL>
 
 <P><STRONG><a name="[58]"></a>usart_baudrate_set</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, gd32f30x_usart.o(i.usart_baudrate_set))

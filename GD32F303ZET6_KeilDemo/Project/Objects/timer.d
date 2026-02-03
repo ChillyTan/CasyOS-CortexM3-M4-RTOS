@@ -38,3 +38,8 @@
 .\objects\timer.o: ..\FW\Include\gd32f30x_enet.h
 .\objects\timer.o: ..\FW\Include\gd32f30x_exmc.h
 .\objects\timer.o: ..\ARM\System\core_cm4.h
+.\objects\timer.o: ..\OS\CasyOS.h
+.\objects\timer.o: ..\OS\os_cfg.h
+.\objects\timer.o: ..\HW\UART0\UART0.h
+.\objects\timer.o: D:\Program Files (x86)\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\timer.o: ..\OS\os_datatype.h

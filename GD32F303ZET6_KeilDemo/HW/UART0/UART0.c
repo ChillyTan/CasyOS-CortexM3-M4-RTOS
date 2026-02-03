@@ -2,8 +2,8 @@
 * Ä£¿éÃû³Æ£ºUART0.c
 * Õª    Òª£º´®¿ÚÄ£¿é£¬°üÀ¨´®¿ÚÄ£¿é³õÊ¼»¯£¬ÒÔ¼°ÖĞ¶Ï·şÎñº¯Êı´¦Àí£¬ÒÔ¼°¶ÁĞ´´®¿Úº¯ÊıÊµÏÖ
 * µ±Ç°°æ±¾£º1.0.0
-* ×÷    Õß£ºLeyutek(COPYRIGHT 2018 - 2021 Leyutek. All rights reserved.)
-* Íê³ÉÈÕÆÚ£º2021Äê07ÔÂ01ÈÕ 
+* ×÷    Õß£ºChill
+* Íê³ÉÈÕÆÚ£º2026Äê01ÔÂ31ÈÕ 
 * ÄÚ    Èİ£º
 * ×¢    Òâ£º
 **********************************************************************************************************
@@ -20,6 +20,7 @@
 #include "UART0.h"
 #include "gd32f30x_conf.h"
 #include "CirQueue.h"
+#include "CasyOS.h"
 
 /*********************************************************************************************************
 *                                              ºê¶¨Òå
@@ -31,9 +32,20 @@
 
 /*********************************************************************************************************
 *                                              ÄÚ²¿±äÁ¿
-*********************************************************************************************************/    
+*********************************************************************************************************/   
 static StructCirQue  s_structUARTRecCirQue;       //½ÓÊÕ´®¿ÚÑ­»·¶ÓÁĞ
 static unsigned char s_arrRecBuf[UART0_BUF_SIZE]; //½ÓÊÕ´®¿ÚÑ­»·¶ÓÁĞµÄ»º³åÇø
+#if SEM_TEST != 0
+extern OS_TASK_HANDLE g_structTestHandle3;  //²âÊÔÏûÏ¢¶ÓÁĞ
+#endif
+#if Q_TEST != 0
+extern OS_TASK_HANDLE g_structTestHandle4;  //²âÊÔÏûÏ¢¶ÓÁĞ
+#endif
+#if FLAG_TEST != 0
+extern OS_FLAG g_FlagTest;
+#endif
+// extern OS_TASK_HANDLE g_structTestHandle8;
+// extern volatile u8 g_OSIntNestCnt;
 
 /*********************************************************************************************************
 *                                              ÄÚ²¿º¯ÊıÉùÃ÷
@@ -49,7 +61,7 @@ static void ConfigUART(unsigned int bound); //ÅäÖÃ´®¿ÚÏà¹ØµÄ²ÎÊı£¬°üÀ¨GPIO¡¢RCU¡
 * ÊäÈë²ÎÊı£ºbound£¬²¨ÌØÂÊ
 * Êä³ö²ÎÊı£ºvoid
 * ·µ »Ø Öµ£ºvoid
-* ´´½¨ÈÕÆÚ£º2021Äê07ÔÂ01ÈÕ
+* ´´½¨ÈÕÆÚ£º2026Äê01ÔÂ31ÈÕ
 * ×¢    Òâ£º
 *********************************************************************************************************/
 static  void  ConfigUART(unsigned int bound)
@@ -86,18 +98,29 @@ static  void  ConfigUART(unsigned int bound)
 * ÊäÈë²ÎÊı£ºvoid
 * Êä³ö²ÎÊı£ºvoid
 * ·µ »Ø Öµ£ºvoid
-* ´´½¨ÈÕÆÚ£º2021Äê07ÔÂ01ÈÕ
+* ´´½¨ÈÕÆÚ£º2026Äê01ÔÂ31ÈÕ
 * ×¢    Òâ£º
 *********************************************************************************************************/
 void USART0_IRQHandler(void)
 {
   unsigned char  uData = 0;
 
+  OSIntEnter();
+
   if(usart_interrupt_flag_get(USART0, USART_INT_FLAG_RBNE) != RESET)  //½ÓÊÕ»º³åÇø·Ç¿ÕÖĞ¶Ï
   {                                                         
     usart_interrupt_flag_clear(USART0, USART_INT_FLAG_RBNE);  //Çå³ıUSART0ÖĞ¶Ï¹ÒÆğ
     uData = usart_data_receive(USART0);                       //½«USART0½ÓÊÕµ½µÄÊı¾İ±£´æµ½uData
     EnCirQueue(&s_structUARTRecCirQue, &uData, 1);            //½«½ÓÊÕµ½µÄÊı¾İĞ´Èë½ÓÊÕ»º³åÇø
+#if SEM_TEST != 0
+    OSSemPost(&g_structTestHandle3.sem);     // ISRÀïµ÷ÓÃÍ³Ò»API
+#endif
+#if Q_TEST != 0
+    OSQPost(&g_structTestHandle4, (u32)"Msg In UART_ISR\r\n");  //ÔÚÖĞ¶ÏÖĞ²âÊÔÏûÏ¢¶ÓÁĞ
+#endif
+#if FLAG_TEST != 0
+    OSFlagPost(&g_FlagTest, (1 << 0) | (1 << 1) | (1 << 2), OS_FLAG_SET);
+#endif
   }
 
   if(usart_interrupt_flag_get(USART0, USART_INT_FLAG_ERR_ORERR) == SET) //Òç³ö´íÎó±êÖ¾Îª1
@@ -105,6 +128,8 @@ void USART0_IRQHandler(void)
     usart_interrupt_flag_clear(USART0, USART_INT_FLAG_ERR_ORERR);       //Çå³ıÒç³ö´íÎó±êÖ¾
     usart_data_receive(USART0);  //¶ÁÈ¡USART_DATA 
   }
+
+  OSIntExit();
 }
 
 /*********************************************************************************************************
@@ -116,7 +141,7 @@ void USART0_IRQHandler(void)
 * ÊäÈë²ÎÊı£ºbound,²¨ÌØÂÊ
 * Êä³ö²ÎÊı£ºvoid
 * ·µ »Ø Öµ£ºvoid
-* ´´½¨ÈÕÆÚ£º2021Äê07ÔÂ01ÈÕ
+* ´´½¨ÈÕÆÚ£º2026Äê01ÔÂ31ÈÕ
 * ×¢    Òâ£º
 *********************************************************************************************************/
 void InitUART0(unsigned int bound)
@@ -134,7 +159,7 @@ void InitUART0(unsigned int bound)
 * ÊäÈë²ÎÊı£ºpBuf£¬ÒªĞ´ÈëÊı¾İµÄÊ×µØÖ·£¬len£¬ÆÚÍûĞ´ÈëÊı¾İµÄ¸öÊı
 * Êä³ö²ÎÊı£ºvoid
 * ·µ »Ø Öµ£º³É¹¦Ğ´ÈëÊı¾İµÄ¸öÊı£¬²»Ò»¶¨ÓëĞÎ²ÎlenÏàµÈ
-* ´´½¨ÈÕÆÚ£º2021Äê07ÔÂ01ÈÕ
+* ´´½¨ÈÕÆÚ£º2026Äê01ÔÂ31ÈÕ
 * ×¢    Òâ£º
 *********************************************************************************************************/
 unsigned int WriteUART0(unsigned char *pBuf, unsigned int len)
@@ -176,7 +201,7 @@ unsigned int WriteUART0(unsigned char *pBuf, unsigned int len)
 * ÊäÈë²ÎÊı£ºpBuf£¬¶ÁÈ¡µÄÊı¾İ´æ·ÅµÄÊ×µØÖ·£¬len£¬ÆÚÍû¶ÁÈ¡Êı¾İµÄ¸öÊı
 * Êä³ö²ÎÊı£ºpBuf£¬¶ÁÈ¡µÄÊı¾İ´æ·ÅµÄÊ×µØÖ·
 * ·µ »Ø Öµ£º³É¹¦¶ÁÈ¡Êı¾İµÄ¸öÊı£¬²»Ò»¶¨ÓëĞÎ²ÎlenÏàµÈ
-* ´´½¨ÈÕÆÚ£º2021Äê07ÔÂ01ÈÕ
+* ´´½¨ÈÕÆÚ£º2026Äê01ÔÂ31ÈÕ
 * ×¢    Òâ£º
 *********************************************************************************************************/
 unsigned int ReadUART0(unsigned char *pBuf, unsigned int len)
@@ -190,7 +215,7 @@ unsigned int ReadUART0(unsigned char *pBuf, unsigned int len)
 * ÊäÈë²ÎÊı£ºch£¬f
 * Êä³ö²ÎÊı£ºvoid
 * ·µ »Ø Öµ£ºint 
-* ´´½¨ÈÕÆÚ£º2021Äê07ÔÂ01ÈÕ
+* ´´½¨ÈÕÆÚ£º2026Äê01ÔÂ31ÈÕ
 * ×¢    Òâ£º
 *********************************************************************************************************/
 int fputc(int ch, FILE *f)

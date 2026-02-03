@@ -40,3 +40,6 @@
 .\objects\uart0.o: ..\FW\Include\gd32f30x_exmc.h
 .\objects\uart0.o: ..\ARM\System\core_cm4.h
 .\objects\uart0.o: ..\HW\UART0\CirQueue.h
+.\objects\uart0.o: ..\OS\CasyOS.h
+.\objects\uart0.o: ..\OS\os_cfg.h
+.\objects\uart0.o: ..\OS\os_datatype.h
