@@ -1,7 +1,7 @@
 Dependencies for Project 'GD32KeilPrj', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (..\App\Main\Main.c)(0x6981AD28)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (..\App\Main\Main.h)(0x612F69BF)
+F (..\App\Main\Main.c)(0x69846D1F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\App\Main\Main.h)(0x6984050B)
 I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
 I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
 I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
@@ -45,7 +45,7 @@ I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (..\App\LED\LED.h)(0x697FF841)
 I (..\App\KeyOne\KeyOne.h)(0x697FF841)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\OS\os_datatype.h)(0x69815965)
 I (..\App\Delay\Delay.h)(0x697FF841)
 F (..\App\LED\LED.c)(0x6981EB3B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
@@ -234,7 +234,7 @@ I (..\FW\Include\gd32f30x_misc.h)(0x5FDC4DCE)
 I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
 I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\HW\UART0\UART0.h)(0x69805DF1)
 I (D:\Program Files (x86)\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (..\OS\os_datatype.h)(0x69815965)
@@ -280,11 +280,11 @@ I (..\FW\Include\gd32f30x_enet.h)(0x5FDC4DCE)
 I (..\FW\Include\gd32f30x_exmc.h)(0x5FDC4DCE)
 I (..\HW\UART0\CirQueue.h)(0x697FF841)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\OS\os_datatype.h)(0x69815965)
 F (..\OS\CasyOS.c)(0x69816630)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\casyos.o --omf_browse .\objects\casyos.crf --depend .\objects\casyos.d)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
 I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
 I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
@@ -325,7 +325,7 @@ I (..\App\DataType\DataType.h)(0x69815980)
 I (..\OS\os_datatype.h)(0x69815965)
 F (..\OS\os_flag.c)(0x698052F3)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_flag.o --omf_browse .\objects\os_flag.crf --depend .\objects\os_flag.d)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
 I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
 I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
@@ -366,7 +366,7 @@ I (..\App\DataType\DataType.h)(0x69815980)
 I (..\OS\os_datatype.h)(0x69815965)
 F (..\OS\os_mem.c)(0x69816A7A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_mem.o --omf_browse .\objects\os_mem.crf --depend .\objects\os_mem.d)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
 I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
 I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
@@ -408,7 +408,7 @@ I (..\OS\os_datatype.h)(0x69815965)
 I (D:\Program Files (x86)\ARM\ARMCC\include\string.h)(0x5E53505C)
 F (..\OS\os_mutex.c)(0x6980102E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_mutex.o --omf_browse .\objects\os_mutex.crf --depend .\objects\os_mutex.d)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
 I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
 I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
@@ -449,7 +449,7 @@ I (..\App\DataType\DataType.h)(0x69815980)
 I (..\OS\os_datatype.h)(0x69815965)
 F (..\OS\os_q.c)(0x69801026)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_q.o --omf_browse .\objects\os_q.crf --depend .\objects\os_q.d)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
 I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
 I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
@@ -490,7 +490,7 @@ I (..\App\DataType\DataType.h)(0x69815980)
 I (..\OS\os_datatype.h)(0x69815965)
 F (..\OS\os_sem.c)(0x69816B55)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_sem.o --omf_browse .\objects\os_sem.crf --depend .\objects\os_sem.d)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
 I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
 I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)
@@ -531,7 +531,7 @@ I (..\App\DataType\DataType.h)(0x69815980)
 I (..\OS\os_datatype.h)(0x69815965)
 F (..\OS\os_task.c)(0x6981662E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\FW\Include -I ..\App\Main -I ..\App\LED -I ..\App\KeyOne -I ..\App\Delay -I ..\ARM\System -I ..\ARM\NVIC -I ..\HW\RCU -I ..\HW\Timer -I ..\HW\UART0 -I ..\App\DataType -I ..\OS-I.\RTE\_Target_1-I"D:\Program Files (x86)\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"D:\Program Files (x86)\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include"-D__UVISION_VERSION="530" -D_RTE_ -DGD32F30X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\os_task.o --omf_browse .\objects\os_task.crf --depend .\objects\os_task.d)
 I (..\OS\CasyOS.h)(0x69816EC7)
-I (..\OS\os_cfg.h)(0x6981C086)
+I (..\OS\os_cfg.h)(0x69846CB0)
 I (..\ARM\System\gd32f30x_conf.h)(0x69819D24)
 I (..\FW\Include\gd32f30x_adc.h)(0x5FDC4DCE)
 I (..\ARM\System\gd32f30x.h)(0x5BC68ACA)

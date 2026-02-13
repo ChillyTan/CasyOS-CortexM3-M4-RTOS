@@ -309,7 +309,7 @@ static void TestTask1(void)
 			}
 #endif	//MEM_TEST
 #if SEM_TEST != 0
-			printf("[Task1] Post Task2 Sem!\r\n");
+			printf("[Task1] Post 1 Semaphore to Task3!\r\n");
 			OSSemPost(&g_structTestHandle3.sem);
 #endif
 #if Q_TEST != 0

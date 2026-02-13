@@ -53,9 +53,9 @@
 					其中LED 和三个独立按键 需要根据开发板配置相应的引脚
 --------------------------------------------------------------------------------------------------------*/
 #define LED_TEST                          1
-#define FPU_TEST                          1
+#define FPU_TEST                          0
 #define MEM_TEST                          0
-#define SEM_TEST                          0
+#define SEM_TEST                          1
 #define Q_TEST                            0
 #define MUTEX_TEST                        0
 #define FLAG_TEST                         0
