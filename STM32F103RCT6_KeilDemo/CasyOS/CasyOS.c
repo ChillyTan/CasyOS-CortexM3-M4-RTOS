@@ -65,8 +65,8 @@ static void IdleTask(void);	//空闲任务
 * 返 回 值：void
 * 创建日期：2026年01月31日
 * 注    意：
-*           1) 空闲任务用于保证系统始终有任务可运行
-*           2) TODO: 可在此处扩展 CPU 利用率统计 / 低功耗处理等功能
+*           (1) 空闲任务用于保证系统始终有任务可运行
+*           (2) TODO: 可在此处扩展 CPU 利用率统计 / 低功耗处理等功能
 *********************************************************************************************************/
 static void IdleTask(void)
 {
@@ -117,7 +117,7 @@ void SysTick_Handler(void)
 	OSIntEnter();
 	OS_TickUpdate();	//所有任务tick递减 空闲任务除外
 
-	OS_Sched();	//触发异常 任务切换
+	OS_Sched();				//触发异常 任务切换
 	OSIntExit();
 }
 
@@ -135,9 +135,9 @@ void SysTick_Handler(void)
 *********************************************************************************************************/
 __ASM void SVC_Handler(void)
 {
-	PRESERVE8                //该段起始地址以8字节对齐
+	PRESERVE8                		//该段起始地址以8字节对齐
 	IMPORT OS_UpdateCurrentTask //引入标号OS_UpdateCurrentTask
-	IMPORT g_pCurrentTask    //引入标号g_pCurrentTask
+	IMPORT g_pCurrentTask    		//引入标号g_pCurrentTask
 
 	//屏蔽所有中断
 	CPSID F
@@ -179,9 +179,9 @@ __ASM void SVC_Handler(void)
 *********************************************************************************************************/
 __ASM void PendSV_Handler(void)
 {
-  PRESERVE8                //该段起始地址以8字节对齐
-  IMPORT OS_UpdateCurrentTask 					 //引入标号OS_UpdateCurrentTask
-  IMPORT g_pCurrentTask    //引入标号g_pCurrentTask
+  PRESERVE8                			//该段起始地址以8字节对齐
+  IMPORT OS_UpdateCurrentTask		//引入标号OS_UpdateCurrentTask
+  IMPORT g_pCurrentTask    			//引入标号g_pCurrentTask
 
   //屏蔽所有中断
   CPSID F
@@ -285,40 +285,36 @@ u32 OSRegister(OS_TASK_HANDLE* p_tcb, void* func, char *p_name, u32 prio, u32* s
 	top = (u32*)(p_tcb->stackBase + p_tcb->stackSize); 
 	top = (u32*)((u32)top & ~0x07);
 
-	// --- 第一组：硬件自动恢复区 ---
-	// 这部分是 BX LR 之后硬件自动从栈里弹出的，顺序固定
-	*(--top) = 0x01000000;				// xPSR
-	*(--top) = (u32)p_tcb->func;	// PC (任务入口)
-	*(--top) = 0xFFFFFFFEUL;			// LR (任务非法退出后的返回地址)
-	*(--top) = 0x12121212;				// R12
-	*(--top) = 0x03030303;				// R3
-	*(--top) = 0x02020202;				// R2
-	*(--top) = 0x01010101;				// R1
-	*(--top) = 0x00000000;				// R0
+	/*--------硬件自动恢复区--------*/
+	*(--top) = 0x01000000;          //xPSR
+	*(--top) = (u32)p_tcb->func;    //PC
+	*(--top) = 0xFFFFFFFEUL;        //LR（非法返回）
+	*(--top) = 0x12121212;          //R12
+	*(--top) = 0x03030303;          //R3
+	*(--top) = 0x02020202;          //R2
+	*(--top) = 0x01010101;          //R1
+	*(--top) = 0x00000000;          //R0
 
-	// --- 第二组：软件恢复区 (对应汇编 POP 顺序) ---
-	// 注意：汇编是 POP{R4-R11}, VPOP, POP{LR}。
-	// 按照后进先出，压栈顺序必须是：LR -> FPU -> R4-R11
-	// 1. 对应最后的 POP{LR}
-	*(--top) = 0xFFFFFFF9UL;			// EXC_RETURN (使用 MSP 且不带 FPU 扩展的返回码)
-	// 2. 对应中间的 VPOP{S16-S31}
+	/*----------软件保存区---------*/
+	*(--top) = 0xFFFFFFF9UL;        //EXC_RETURN
+
 #if OS_CFG_FPU_EN != 0
 	for(i = 0; i < 16; i++)
 	{
-			*(--top) = 0;							// 初始化浮点寄存器为 0
+		*(--top) = 0;
 	}
 #endif
-	// 3. 对应最先执行的 POP{R4-R11}
-	*(--top) = 0x11111111;				// R11
-	*(--top) = 0x10101010;				// R10
-	*(--top) = 0x09090909;				// R9
-	*(--top) = 0x08080808;				// R8
-	*(--top) = 0x07070707;				// R7
-	*(--top) = 0x06060606;				// R6
-	*(--top) = 0x05050505;				// R5
-	*(--top) = 0x04040404;				// R4
 
-	p_tcb->stackTop = top;				// 记录最终栈指针
+	*(--top) = 0x11111111;          //R11
+	*(--top) = 0x10101010;          //R10
+	*(--top) = 0x09090909;          //R9
+	*(--top) = 0x08080808;          //R8
+	*(--top) = 0x07070707;          //R7
+	*(--top) = 0x06060606;          //R6
+	*(--top) = 0x05050505;          //R5
+	*(--top) = 0x04040404;          //R4
+
+	p_tcb->stackTop = top;
 
 	OS_TaskListAdd(p_tcb);				//加入到全局任务单链表
 #if OS_CFG_SEM_EN != 0

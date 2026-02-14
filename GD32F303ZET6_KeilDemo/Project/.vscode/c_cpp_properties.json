@@ -3,19 +3,19 @@
         {
             "name": "Target 1",
             "includePath": [
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\FW\\Include",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\App\\Main",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\App\\LED",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\App\\Delay",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\App\\KeyOne",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\ARM\\System",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\App\\DataType",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\ARM\\NVIC",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\HW\\RCU",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\HW\\Timer",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\HW\\UART0",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\OS",
-                "d:\\Embedded\\CasyOS\\GD32F303ZET6_Demo\\FW\\Source"
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\FW\\Include",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\App\\Main",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\App\\LED",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\App\\Delay",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\App\\KeyOne",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\ARM\\System",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\App\\DataType",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\ARM\\NVIC",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\HW\\RCU",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\HW\\Timer",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\HW\\UART0",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\OS",
+                "d:\\Embedded\\CasyOS\\GD32F303ZET6_KeilDemo\\FW\\Source"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",
