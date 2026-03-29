@@ -1,0 +1,17 @@
+{
+  "learningPath": [
+    "project-overview",
+    "startup-and-boot",
+    "exception-model",
+    "task-scheduler",
+    "delay-and-tick",
+    "semaphore",
+    "mutex",
+    "message-queue",
+    "event-flag",
+    "memory-management",
+    "config-and-porting",
+    "demo-projects",
+    "code-risks"
+  ]
+}

@@ -1,18 +1,26 @@
 import { createBrowserRouter } from "react-router-dom";
-
-function PlaceholderPage() {
-  return (
-    <main className="page">
-      <p className="eyebrow">CasyOS Learning Workspace</p>
-      <h1>学习网站骨架已启动</h1>
-      <p>下一步会接入模块内容、评论区和学习文档。</p>
-    </main>
-  );
-}
+import { Layout } from "../components/Layout";
+import { HomePage } from "../features/home/HomePage";
+import { ModulePage } from "../features/modules/ModulePage";
+import { NotesPage } from "../features/notes/NotesPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <PlaceholderPage />
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />
+      },
+      {
+        path: "modules/:moduleId",
+        element: <ModulePage />
+      },
+      {
+        path: "notes",
+        element: <NotesPage />
+      }
+    ]
   }
 ]);

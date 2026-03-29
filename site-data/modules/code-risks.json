@@ -1,0 +1,20 @@
+{
+  "id": "code-risks",
+  "title": "代码风险点",
+  "summary": "记录当前阅读中发现的实现风险和学习时值得特别关注的地方。",
+  "category": "analysis",
+  "prerequisites": ["task-scheduler", "message-queue", "event-flag"],
+  "sections": [
+    {
+      "id": "risk-list",
+      "title": "当前值得关注的风险",
+      "body": "阅读过程中已经观察到消息队列分配长度、事件标志条件判断、任务链表移除逻辑等潜在风险，这些地方会在站点中单独标注。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/os_q.c",
+    "D:/explore/CasyOS/SourceCode/os_flag.c",
+    "D:/explore/CasyOS/SourceCode/os_task.c"
+  ],
+  "tags": ["risk", "review", "pitfalls"]
+}

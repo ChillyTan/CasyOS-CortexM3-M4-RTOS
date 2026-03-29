@@ -1,0 +1,19 @@
+{
+  "id": "demo-projects",
+  "title": "Demo 工程",
+  "summary": "理解 GD32 与 STM32 示例工程如何承载同一套 CasyOS 内核。",
+  "category": "porting",
+  "prerequisites": ["config-and-porting"],
+  "sections": [
+    {
+      "id": "demo-core",
+      "title": "两类 Demo 的意义",
+      "body": "仓库中的 GD32 与 STM32 工程展示了相同内核如何接到不同芯片启动文件、外设库和中断处理链条上。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/GD32F303ZET6_KeilDemo",
+    "D:/explore/CasyOS/STM32F103RCT6_KeilDemo"
+  ],
+  "tags": ["demo", "gd32", "stm32"]
+}

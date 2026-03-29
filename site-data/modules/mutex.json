@@ -1,0 +1,18 @@
+{
+  "id": "mutex",
+  "title": "互斥量",
+  "summary": "理解 ownerTcb、lockCnt 与递归加锁释放的工作方式。",
+  "category": "ipc",
+  "prerequisites": ["task-scheduler"],
+  "sections": [
+    {
+      "id": "mutex-core",
+      "title": "递归互斥的关键点",
+      "body": "互斥量不仅记录等待者，还记录 ownerTcb 和 lockCnt，因此支持同一任务重复获取后递归释放。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/os_mutex.c"
+  ],
+  "tags": ["ipc", "mutex", "owner"]
+}

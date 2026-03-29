@@ -1,0 +1,24 @@
+{
+  "id": "task-scheduler",
+  "title": "任务管理与调度",
+  "summary": "理解 TCB、就绪队列、优先级位图以及当前任务切换选择逻辑。",
+  "category": "kernel-core",
+  "prerequisites": ["project-overview", "startup-and-boot", "exception-model"],
+  "sections": [
+    {
+      "id": "responsibility",
+      "title": "模块职责",
+      "body": "这个模块维护任务全局链表、每个优先级的就绪队列、优先级位图以及延时相关的调度辅助结构。它决定了当前应该运行哪个任务。"
+    },
+    {
+      "id": "bitmap",
+      "title": "位图与最高优先级选择",
+      "body": "CasyOS 用优先级位图快速找出最高优先级就绪任务，再从对应优先级的就绪链表头部取出当前要运行的任务。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/os_task.c",
+    "D:/explore/CasyOS/SourceCode/CasyOS.h"
+  ],
+  "tags": ["scheduler", "tcb", "priority", "ready-list"]
+}

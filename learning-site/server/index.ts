@@ -1,11 +1,7 @@
-import express from "express";
+import { createServer } from "./app";
 
-const app = express();
+const app = createServer();
 const port = 4173;
-
-app.get("/api/health", (_req, res) => {
-  res.json({ ok: true });
-});
 
 app.listen(port, () => {
   console.log(`CasyOS learning server listening on ${port}`);

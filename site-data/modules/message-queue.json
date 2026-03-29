@@ -1,0 +1,18 @@
+{
+  "id": "message-queue",
+  "title": "消息队列",
+  "summary": "理解内建队列、直接投递和环形缓冲区的组合策略。",
+  "category": "ipc",
+  "prerequisites": ["task-scheduler"],
+  "sections": [
+    {
+      "id": "queue-core",
+      "title": "直接投递与环形队列",
+      "body": "如果目标任务正在等待自己的消息队列，消息会直接写入 msgTemp 并唤醒任务；否则进入环形缓冲区等待后续读取。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/os_q.c"
+  ],
+  "tags": ["ipc", "queue", "message"]
+}

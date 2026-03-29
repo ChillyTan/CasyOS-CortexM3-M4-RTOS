@@ -1,0 +1,18 @@
+{
+  "id": "exception-model",
+  "title": "异常模型",
+  "summary": "理解 SysTick、SVC 与 PendSV 在 CasyOS 中的分工。",
+  "category": "runtime",
+  "prerequisites": ["startup-and-boot"],
+  "sections": [
+    {
+      "id": "roles",
+      "title": "三类异常的职责",
+      "body": "SysTick 负责提供系统节拍和驱动延时更新，SVC 用于启动第一个任务，PendSV 专门承担上下文切换，三者构成异常驱动调度模型。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/CasyOS.c"
+  ],
+  "tags": ["systick", "svc", "pendsv"]
+}

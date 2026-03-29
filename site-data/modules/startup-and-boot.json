@@ -1,0 +1,19 @@
+{
+  "id": "startup-and-boot",
+  "title": "启动与引导",
+  "summary": "从 Demo 的 main 开始，理解 InitCasyOS、任务注册与 OSStart 的启动顺序。",
+  "category": "runtime",
+  "prerequisites": ["project-overview"],
+  "sections": [
+    {
+      "id": "main-flow",
+      "title": "main 调用链",
+      "body": "Demo 工程通常先初始化串口，再执行 InitCasyOS，随后通过 OSRegister 注册任务，最后由 OSStart 进入系统调度。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/GD32F303ZET6_KeilDemo/App/Main/Main.c",
+    "D:/explore/CasyOS/SourceCode/CasyOS.c"
+  ],
+  "tags": ["boot", "main", "osstart"]
+}

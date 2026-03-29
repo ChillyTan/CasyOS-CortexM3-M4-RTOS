@@ -35,6 +35,45 @@ CasyOS/
 
 > 注意 由于个人习惯 所有代码都是2空格缩进 请调整相应设置达到更好的观看效果
 
+---
+## 🌐 CasyOS 学习网站
+
+仓库内新增了一个面向源码学习的网站工作台，路径如下：
+
+```text
+learning-site/         # Vite + React + Express 本地学习站
+site-data/modules/     # CasyOS 模块化讲解数据
+site-data/comments/    # 你的 Markdown 评论原始数据
+docs/learning/         # 生成出的学习文档
+```
+
+### 本地启动
+
+```bash
+cd learning-site
+npm install
+npm run dev
+```
+
+启动后：
+- 前端页面默认由 Vite 提供
+- 本地 API 服务监听 `http://localhost:4173`
+
+### 学习站支持的能力
+
+- 按模块讲解 CasyOS：启动、异常、调度、Tick、IPC、移植、风险点
+- 在模块页写 Markdown 评论与批注
+- 评论自动落盘到 `site-data/comments/*.json`
+- 一键把模块讲解和你的评论汇总成 `docs/learning/*.md`
+
+### 常用命令
+
+```bash
+cd learning-site
+npm test
+npm run build
+```
+
 --- 
 ## 🧱 系统架构总览 Architecture
 
