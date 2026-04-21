@@ -1,0 +1,18 @@
+{
+  "id": "semaphore",
+  "title": "信号量",
+  "summary": "理解 OSSemPend 与 OSSemPost 如何围绕计数值和 pendList 协作。",
+  "category": "ipc",
+  "prerequisites": ["task-scheduler"],
+  "sections": [
+    {
+      "id": "sem-core",
+      "title": "核心行为",
+      "body": "当 count 大于 0 时，任务可直接获取资源；当 count 为 0 时，任务被从就绪队列移出并挂入信号量的 pendList。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/os_sem.c"
+  ],
+  "tags": ["ipc", "semaphore", "pend"]
+}

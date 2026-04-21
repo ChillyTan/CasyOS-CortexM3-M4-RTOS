@@ -1,0 +1,19 @@
+{
+  "id": "config-and-porting",
+  "title": "配置与移植",
+  "summary": "理解 os_cfg.h 中的裁剪开关，以及把 CasyOS 接入自己工程时要接管哪些入口。",
+  "category": "porting",
+  "prerequisites": ["project-overview"],
+  "sections": [
+    {
+      "id": "cfg-core",
+      "title": "os_cfg.h 的角色",
+      "body": "os_cfg.h 是裁剪和移植入口，决定是否启用内存、信号量、消息队列、互斥量、事件标志组以及 FPU 等能力。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/os_cfg.h",
+    "D:/explore/CasyOS/CasyOS 快速上手_移植必看.md"
+  ],
+  "tags": ["config", "porting", "os_cfg"]
+}

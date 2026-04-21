@@ -1,0 +1,18 @@
+{
+  "id": "project-overview",
+  "title": "项目总览",
+  "summary": "建立对 CasyOS 的定位、边界和学习顺序的第一层认知。",
+  "category": "overview",
+  "prerequisites": [],
+  "sections": [
+    {
+      "id": "定位",
+      "title": "项目定位",
+      "body": "CasyOS 是一个面向 Cortex-M3/M4 的轻量级学习型 RTOS，重点在帮助读者理解调度、上下文切换、Tick、临界区与 IPC 的基本机制。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/README.md"
+  ],
+  "tags": ["overview", "rtos", "learning"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "delay-and-tick",
+  "title": "延时与 Tick",
+  "summary": "理解 SysTick 到来后，任务延时如何递减，以及调度请求如何被触发。",
+  "category": "kernel-core",
+  "prerequisites": ["exception-model", "task-scheduler"],
+  "sections": [
+    {
+      "id": "tick-flow",
+      "title": "Tick 驱动流程",
+      "body": "SysTick_Handler 中先进入中断计数，再更新延时，再设置调度请求，最后在中断退出点统一触发 PendSV。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/CasyOS.c",
+    "D:/explore/CasyOS/SourceCode/os_task.c"
+  ],
+  "tags": ["tick", "delay", "interrupt"]
+}

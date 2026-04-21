@@ -1,0 +1,18 @@
+{
+  "id": "memory-management",
+  "title": "内存管理",
+  "summary": "理解 CasyOS 的简易内存池与内建对象分配方式。",
+  "category": "kernel-core",
+  "prerequisites": ["project-overview"],
+  "sections": [
+    {
+      "id": "mem-core",
+      "title": "内存池角色",
+      "body": "内存池用于支撑消息队列等运行期资源分配，它不是通用堆替代品，而是教学型内核中的简化内存模块。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/os_mem.c"
+  ],
+  "tags": ["memory", "pool", "allocation"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "event-flag",
+  "title": "事件标志组",
+  "summary": "理解 SET/CLR 与 ALL/ANY 等等待模式如何匹配任务。",
+  "category": "ipc",
+  "prerequisites": ["task-scheduler"],
+  "sections": [
+    {
+      "id": "flag-core",
+      "title": "标志匹配逻辑",
+      "body": "事件标志组支持 SET_ALL、SET_ANY、CLR_ALL、CLR_ANY 等等待模式，唤醒时会从等待链表里挑选优先级最高且匹配条件的任务。"
+    }
+  ],
+  "files": [
+    "D:/explore/CasyOS/SourceCode/os_flag.c"
+  ],
+  "tags": ["ipc", "flags", "events"]
+}
